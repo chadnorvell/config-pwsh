@@ -62,3 +62,7 @@ function ln {
 
     New-Item -ItemType SymbolicLink -Path $Link -Target $Target
 }
+
+function printenv {
+    gci env:* | sort-object name
+}
